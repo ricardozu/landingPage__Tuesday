@@ -1,0 +1,60 @@
+header{
+   background-position: top
+    
+}
+
+.title{
+    /*En desktop 6rem*/
+    font-size: 6rem;
+    
+}
+
+.paragraph{
+    /*En desktop 2.5*/
+    font-size: 2.5rem;
+}
+
+.subtitle{
+    /*En desktop 4rem*/
+    font-size: 4rem;
+}
+
+/*Service*/
+
+/*Para que se separa en dos la sección*/
+.service__picture{
+    width: 50%;
+    
+}
+
+.checklist__service{
+    width:40%
+}
+
+.galerry__img{
+    /*Desktop 30%*/
+    width: 30%;
+    
+}
+
+/*Experts*/
+
+.n-expert{
+    font-size: 1.4rem;
+}
+
+/*Footer*/
+
+.social__media-icon{
+    /*Width y height de 60px en desktop*/
+    width: 60px;
+    height: 60px;
+    
+}
+
+.social__media-icon i{
+    /*30px en desktop*/
+    font-size: 30px;
+    /*Lo centra verticalmente, 60px en desktop*/
+    line-height: 60px;
+}

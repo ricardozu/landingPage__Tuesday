@@ -2,6 +2,10 @@
 /*Para que los links puedan dirigirse con animacion hasta las section que estan vinculadas al ID.  */
 :root{
     scroll-behavior: smooth;
+    --side-bar:linear-gradient(to right, #d3c0e2a8, #8ca6db7f);
+    --subtitle: #9f8ad0;
+    --shadow: 0 0 6px rgba(0, 0, 0, .5);
+
 }
 
 
@@ -30,8 +34,8 @@ body{
 
 header{
     height: 100vh;
-    background-image: linear-gradient(120deg, rgba(253, 251, 251, 0.534) 0%, rgb(235, 237, 238) 100%), url('/assets/img/header__image.jpg');
-    background-position: top;
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.436) 0%, rgba(251, 194, 235, 0.463) 100%), url('/landingPage__Tuesday/assets/img/header__image.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
@@ -44,21 +48,24 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     color: #FFF;
-}
-
-.container__head>h1{
-    
     text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
 }
 
-.container__head > p{
-    color: black;
-}
-
 .nav{
-    text-align: end;
-    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background: var(--side-bar);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translate(110%);
+    box-shadow: var(--shadow);
 }
 
 .nav .nav__link{
@@ -66,9 +73,236 @@ header{
     margin-right: 10px;
     color: #FFF;
     font-weight: bold;
-    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+    text-shadow: var(--shadow);
 }
 
 .nav__link:hover{
     text-decoration: overline;
 }
+
+.hamburger{
+    /*Para que asi se mantenga fijo en toda la pantalla, incluso cuando se hace scroll*/
+    position: fixed;
+    top: 30px;
+    right: 15px;
+    background-color: #FFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.spread{
+    /*Cuando se de click al boton, el translate sera 0, es decir, aparecera*/
+    transform: translate(0);
+}
+
+.title{
+    /*En desktop 6rem*/
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.paragraph{
+    /*En desktop 2.5*/
+    font-size: 2rem;
+    font-size: 300;
+}
+
+/*Our servide*/
+
+.subtitle{
+    text-align: center;
+    font-weight: 300;
+    color: #9f8ad0;
+    /*En desktop 4rem*/
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.service__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.service__picture{
+    /*En desktop 45% para que se vea a la mitad y la otra mitad el texto*/
+    width: 95%;
+    max-width: 450px;
+}
+
+/*
+.checklist__service{
+    width:45%
+}
+
+*/
+
+.service__img{
+    width: 100%;
+}
+
+.service{
+    /*En desktop 20px*/
+    margin-bottom: 10px;
+}
+
+.n-service{
+    margin-bottom: 7px;
+    color: #9f8ad0;
+}
+
+.number{
+    /*Como es un span, se le da este display para poderle dar propiedades. */
+    display: inline-block;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 15px;
+}
+
+.gallery{
+    background: #f2f2f2;
+}
+
+.gallery__container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.galerry__img{
+    /*Desktop 30%*/
+    width: 45%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+
+.experts{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.experts__container{
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.experts__container img{
+    width: 100%;
+    display: block;
+}
+
+.n-expert{
+    display: inline-block;
+    margin-top: 20px;
+    font: 400;
+}
+
+/*Footer*/
+
+footer{
+    background-color: var(--subtitle);
+    padding: 0.1px;
+}
+
+.footer__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    
+}
+
+.contact__us{
+    width: 40%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+/*+ hermano adyacente a la clase .brand, que es (parrafo)*/
+.brand+p{
+    font-weight: 500;
+}
+
+.social__media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social__media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    /*Width y height de 60px en desktop*/
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    /*Centra el icono en el circulo*/
+    text-align: center;
+    color: #fff;
+}
+
+.social__nedia-icon:hover{
+    background-color: #fff;
+    color: #764ba2;
+}
+
+.social__media-icon i{
+    /*30px en desktop*/
+    font-size: 15px;
+    /*Lo centra verticalmente, 60px en desktop*/
+    line-height: 17px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

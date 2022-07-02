@@ -1,0 +1,13 @@
+.n-service{
+    font-size: 2rem;
+}
+
+.service>p{
+    font-size: 1.2rem;
+}
+
+/*Experts*/
+.experts{
+    display:grid;
+    grid-template-columns: repeat(3, max-content)
+}

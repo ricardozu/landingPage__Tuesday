@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 600px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1000px)">
 
     <title>Document</title>
 </head>
 
 <body>
     <header class="header" id="inicio">
-        <!-- <img src="./assets/icon/bx-menu-alt-right.svg" alt="menu desplegable" class="hamburger"> -->
+        <img src="./assets/icon/bx-menu-alt-right.svg" alt="menu desplegable" class="hamburger">
 
         <nav class="nav">
             <a class=nav__link href="#inicio">Inicio</a>
@@ -25,8 +27,8 @@
         </nav>
 
         <div class="container__head">
-            <h1>Convertimos tus suenos en realidad</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+            <h1 class="title">Convertimos tus suenos en realidad</h1>
+            <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
         </div>
     </header>
 
@@ -35,26 +37,26 @@
             <h2 class="subtitle">Our service</h2>
 
             <div class="service__container">
-                <picture service__picture>
-                    <img class="service__img" src="./assets/img/checklist.svg" alt="checklist">
+                <picture class="service__picture">
+                    <img class="service__img" src="./assets/img/checklist.svg" alt="">
                 </picture>
                 
                 <div class="checklist__service">
 
                     <div class="service">
-                        <h3 class="n-service"><span class="number">1</span>Diseno web</h3>
+                        <h3 class="n-service"><span class="number">1</span>Diseño web</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laborum recusandae accusamus
                             sequi minus distinctio eum placeat corporis illum. Officiis id eaque delectus quam suscipit
                             praesentium dicta facere consectetur reiciendis!</p>
                     </div>
                     <div class="service">
-                        <h3 class="n-service"><span class="number">2</span>Diseno web</h3>
+                        <h3 class="n-service"><span class="number">2</span>Diseño web</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laborum recusandae accusamus
                             sequi minus distinctio eum placeat corporis illum. Officiis id eaque delectus quam suscipit
                             praesentium dicta facere consectetur reiciendis!</p>
                     </div>
                     <div class="service">
-                        <h3 class="n-service"><span class="number">3</span>Diseno web</h3>
+                        <h3 class="n-service"><span class="number">3</span>Diseño web</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laborum recusandae accusamus
                             sequi minus distinctio eum placeat corporis illum. Officiis id eaque delectus quam suscipit
                             praesentium dicta facere consectetur reiciendis!</p>
@@ -103,7 +105,7 @@
     </main>
 
     <footer id="contacto">
-        <div class="container">
+        <div class=" footer__content container">
             <div class="contact__us">
                 <h2 class="brand">Ricardozu Design</h2>
                 <p>Experts in building your dreams</p>
@@ -119,7 +121,12 @@
                 <a href="#" class="social__media-icon">
                     <i class='bx bxl-twitter'></i>
                 </a>
+                
             </div>
+        </div>
+
+        <div class="line">
+            
         </div>
     </footer>
 
