@@ -39,11 +39,25 @@ header{
 
 /*Experts*/
 
+.experts__container{
+    width: 55%;
+
+}
+
 .n-expert{
     font-size: 1.4rem;
 }
 
 /*Footer*/
+
+.contact__us{
+    width: 45%;
+}
+
+.social__media{
+    width: 45%;
+    max-width: 700px;
+}
 
 .social__media-icon{
     /*Width y height de 60px en desktop*/

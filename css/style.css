@@ -34,8 +34,7 @@ body{
 
 header{
     height: 100vh;
-    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.436) 0%, rgba(251, 194, 235, 0.463) 100%), url('/landingPage__Tuesday/assets/img/header__image.jpg');
-    background-position: center;
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.436) 0%, rgba(251, 194, 235, 0.463) 100%), url('/assets/img/header__image.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
@@ -132,6 +131,7 @@ header{
     /*En desktop 45% para que se vea a la mitad y la otra mitad el texto*/
     width: 95%;
     max-width: 450px;
+    margin-bottom: 45px;
 }
 
 /*
@@ -153,6 +153,10 @@ header{
 .n-service{
     margin-bottom: 7px;
     color: #9f8ad0;
+}
+
+.service>p{
+    text-align: justify;
 }
 
 .number{
@@ -200,7 +204,8 @@ header{
 }
 
 .experts__container{
-    width: 300px;
+    width: 200px;
+    max-width: 300px;    
     text-align: center;
     margin: 0 auto;
     margin-bottom: 25px;
@@ -235,8 +240,10 @@ footer{
 }
 
 .contact__us{
-    width: 40%;
+    text-align: center;
+    width: 80%;
     color: #fff;
+    margin-bottom: 40px;
 }
 
 .brand{
@@ -250,17 +257,16 @@ footer{
 }
 
 .social__media{
-    width: 50%;
+    width: 80%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
 }
 
 .social__media-icon{
     display: inline-block;
-    margin-left: 20px;
     /*Width y height de 60px en desktop*/
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     border: 1px solid #fff;
     border-radius: 50%;
     /*Centra el icono en el circulo*/
@@ -275,9 +281,9 @@ footer{
 
 .social__media-icon i{
     /*30px en desktop*/
-    font-size: 15px;
+    font-size: 24px;
     /*Lo centra verticalmente, 60px en desktop*/
-    line-height: 17px;
+    line-height: 40px;
 }
 
 .line{
